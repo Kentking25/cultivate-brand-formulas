@@ -38,7 +38,7 @@ const HeroSection = () => {
 
           {/* Segmentation Question */}
           <div className="mb-8">
-            <p className="text-lg text-gray-600 mb-6">What describes you best?</p>
+            <p className="text-lg text-muted-foreground mb-6">What describes you best?</p>
           </div>
 
           {/* Dual CTAs */}
@@ -63,13 +63,13 @@ const HeroSection = () => {
 
           {/* Trust Indicators */}
           <div className="mt-16">
-            <p className="text-gray-600 text-sm mb-4">Trusted by brands like:</p>
+            <p className="text-muted-foreground text-sm mb-4">Trusted by brands like:</p>
             <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-              <span className="text-black font-medium">Windows</span>
-              <span className="text-black font-medium">Printify</span>
-              <span className="text-black font-medium">Sprite</span>
-              <span className="text-black font-medium">Reebok</span>
-              <span className="text-black font-medium">MAGFAST</span>
+              <span className="text-foreground font-medium">Windows</span>
+              <span className="text-foreground font-medium">Printify</span>
+              <span className="text-foreground font-medium">Sprite</span>
+              <span className="text-foreground font-medium">Reebok</span>
+              <span className="text-foreground font-medium">MAGFAST</span>
             </div>
           </div>
         </div>

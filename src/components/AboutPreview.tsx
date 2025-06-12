@@ -60,7 +60,7 @@ const AboutPreview = () => {
 
           {/* Right Side - Featured Content */}
           <div className="space-y-6">
-            <Card className="glass-effect hover-scale">
+            <Card className="bg-white hover:shadow-lg transition-all duration-300 hover-scale">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-3 text-gradient">Speaking Topics</h3>
                 <ul className="space-y-2 text-muted-foreground">
@@ -71,7 +71,7 @@ const AboutPreview = () => {
               </CardContent>
             </Card>
             
-            <Card className="glass-effect hover-scale">
+            <Card className="bg-white hover:shadow-lg transition-all duration-300 hover-scale">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-3 text-gradient">Recent Success</h3>
                 <p className="text-muted-foreground">
@@ -81,7 +81,7 @@ const AboutPreview = () => {
               </CardContent>
             </Card>
             
-            <Card className="glass-effect hover-scale">
+            <Card className="bg-white hover:shadow-lg transition-all duration-300 hover-scale">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-3 text-gradient">SOS Club Community</h3>
                 <p className="text-muted-foreground mb-3">
