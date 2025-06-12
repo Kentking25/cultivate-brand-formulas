@@ -32,8 +32,8 @@ const ResourcesSection = () => {
 
   return (
     <section className="py-20 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background to-ash"></div>
+      {/* Background - Pure white to gray */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50"></div>
       
       {/* Decorative Elements */}
       <div className="absolute top-20 right-10 opacity-10">
@@ -112,7 +112,7 @@ const ResourcesSection = () => {
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
                         {/* Icon */}
-                        <div className="w-12 h-12 bg-gradient-to-r from-cultivate to-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-cultivate-gradient rounded-lg flex items-center justify-center flex-shrink-0">
                           {resource.type === 'Video' ? (
                             <Play className="w-6 h-6 text-white" />
                           ) : (
@@ -142,7 +142,7 @@ const ResourcesSection = () => {
                           </p>
                           
                           <div className="flex items-center justify-between">
-                            <span className="text-xs text-slate">
+                            <span className="text-xs text-gray-600">
                               {resource.duration && `${resource.duration} watch`}
                               {resource.downloads && `${resource.downloads} downloads`}
                             </span>

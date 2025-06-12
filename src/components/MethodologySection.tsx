@@ -25,21 +25,21 @@ const MethodologySection = () => {
       title: "Activate",
       subtitle: "Implementation",
       description: "We catalyze your content transformation with systematic execution and continuous refinement.",
-      gradient: "from-orange-500 to-charcoal"
+      gradient: "from-orange-500 to-gray-600"
     },
     {
       icon: BarChart,
       title: "Accelerate",
       subtitle: "Scale & Optimize",
       description: "Through data-driven analysis, we amplify what works and compound your content's exponential growth.",
-      gradient: "from-charcoal to-obsidian"
+      gradient: "from-gray-600 to-black"
     }
   ];
 
   return (
     <section className="py-20 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-mist to-background"></div>
+      {/* Background - Pure white to gray */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white"></div>
       
       {/* Large Decorative Elements */}
       <div className="absolute top-20 left-1/4 opacity-5">
@@ -72,7 +72,7 @@ const MethodologySection = () => {
                   <CardContent className="p-8 text-center">
                     {/* Step Number */}
                     <div className="absolute top-4 right-4">
-                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-ash to-slate text-white text-sm font-bold flex items-center justify-center">
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-gray-200 to-gray-400 text-black text-sm font-bold flex items-center justify-center">
                         {index + 1}
                       </div>
                     </div>
@@ -107,7 +107,7 @@ const MethodologySection = () => {
 
         {/* Bottom CTA Section */}
         <div className="mt-20 text-center">
-          <Card className="max-w-3xl mx-auto bg-gradient-to-r from-cultivate to-orange-600 text-white">
+          <Card className="max-w-3xl mx-auto bg-cultivate-gradient text-white">
             <CardContent className="p-12">
               <h3 className="text-3xl font-bold mb-6">Ready to Transform Your Content?</h3>
               <p className="text-xl mb-8 opacity-90">

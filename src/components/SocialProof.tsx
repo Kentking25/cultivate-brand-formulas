@@ -32,8 +32,8 @@ const SocialProof = () => {
 
   return (
     <section className="py-20 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-ash to-mist"></div>
+      {/* Background - Pure white to gray */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-100"></div>
       
       {/* Decorative Elements */}
       <div className="absolute top-10 right-20 opacity-10">
@@ -43,10 +43,10 @@ const SocialProof = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Brand Logos */}
         <div className="text-center mb-16">
-          <p className="text-slate text-lg mb-8">Trusted by industry leaders and growing brands</p>
+          <p className="text-gray-600 text-lg mb-8">Trusted by industry leaders and growing brands</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {brands.map((brand, index) => (
-              <div key={index} className="text-graphite font-semibold text-lg hover:text-cultivate transition-colors">
+              <div key={index} className="text-gray-700 font-semibold text-lg hover:text-cultivate transition-colors">
                 {brand}
               </div>
             ))}
