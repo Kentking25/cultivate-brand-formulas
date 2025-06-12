@@ -18,21 +18,21 @@ const MethodologySection = () => {
       title: "Formulate",
       subtitle: "Strategy Design",
       description: "Using proven content chemistry, we create a customized formula that aligns with your unique brand DNA.",
-      gradient: "from-orange-600 to-red-500"
+      gradient: "from-orange-600 to-orange-500"
     },
     {
       icon: Rocket,
       title: "Activate",
       subtitle: "Implementation",
       description: "We catalyze your content transformation with systematic execution and continuous refinement.",
-      gradient: "from-red-500 to-pink-500"
+      gradient: "from-orange-500 to-charcoal"
     },
     {
       icon: BarChart,
       title: "Accelerate",
       subtitle: "Scale & Optimize",
       description: "Through data-driven analysis, we amplify what works and compound your content's exponential growth.",
-      gradient: "from-pink-500 to-purple-500"
+      gradient: "from-charcoal to-obsidian"
     }
   ];
 

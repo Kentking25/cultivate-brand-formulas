@@ -63,7 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Kent's brand colors - Orange theme inspired by reference
+				// Kent's brand colors - Orange, Black, White & Gray theme
 				vibrant: '#FF5722', // Main vibrant orange
 				tangerine: '#FF7043', // Lighter orange
 				coral: '#FF6F43', // Coral orange
@@ -71,7 +71,11 @@ export default {
 				charcoal: '#212121', // Dark charcoal
 				slate: '#424242', // Medium gray
 				pearl: '#FAFAFA', // Off white
-				cultivate: '#FF5722' // Primary brand color (orange)
+				cultivate: '#FF5722', // Primary brand color (orange)
+				graphite: '#616161', // Medium gray
+				ash: '#F5F5F5', // Light gray
+				mist: '#FAFAFA', // Very light gray
+				obsidian: '#000000' // Pure black
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

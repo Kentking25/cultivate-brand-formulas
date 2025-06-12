@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Kent Cultivate Design System - Orange Theme */
+/* Kent Cultivate Design System - Orange, Black, White & Gray Theme */
 
 @layer base {
   :root {
@@ -60,7 +60,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent;
   }
   
   .hover-scale {
@@ -74,7 +74,7 @@
 
 @layer components {
   .atomic-element {
-    @apply relative w-4 h-4 bg-gradient-to-br from-orange-500 to-red-500 rounded-full;
+    @apply relative w-4 h-4 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full;
   }
   
   .atomic-element::before {
@@ -83,6 +83,6 @@
   }
   
   .molecular-bond {
-    @apply w-8 h-0.5 bg-gradient-to-r from-orange-500 via-red-500 to-orange-600;
+    @apply w-8 h-0.5 bg-gradient-to-r from-orange-500 to-orange-600;
   }
 }

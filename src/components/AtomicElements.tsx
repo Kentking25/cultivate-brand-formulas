@@ -32,10 +32,10 @@ const AtomicStructure = ({ className = '' }) => {
       
       {/* Orbital rings */}
       <div className="absolute inset-0 rounded-full border border-cultivate/30 animate-spin" style={{ animationDuration: '20s' }}></div>
-      <div className="absolute inset-2 rounded-full border border-graphite/30 animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }}></div>
+      <div className="absolute inset-2 rounded-full border border-charcoal/30 animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }}></div>
       
       {/* Orbiting electrons */}
-      <div className="absolute top-0 left-1/2 w-2 h-2 bg-graphite rounded-full transform -translate-x-1/2 animate-orbit"></div>
+      <div className="absolute top-0 left-1/2 w-2 h-2 bg-charcoal rounded-full transform -translate-x-1/2 animate-orbit"></div>
       <div className="absolute top-1/2 right-0 w-2 h-2 bg-cultivate rounded-full transform -translate-y-1/2 animate-orbit" style={{ animationDelay: '10s' }}></div>
     </div>
   );

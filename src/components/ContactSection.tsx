@@ -14,7 +14,7 @@ const ContactSection = () => {
   return (
     <section className="py-20 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-brand-gradient"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-charcoal to-obsidian"></div>
       
       {/* Floating Elements */}
       <FloatingElements />
