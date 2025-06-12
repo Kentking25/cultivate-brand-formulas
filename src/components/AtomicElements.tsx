@@ -62,7 +62,7 @@ const FloatingElements = () => {
           key={element.id}
           delay={element.delay}
           size={element.size}
-          className={`top-[${element.top}%] left-[${element.left}%]`}
+          className="absolute"
           style={{
             top: `${element.top}%`,
             left: `${element.left}%`

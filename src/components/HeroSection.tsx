@@ -45,7 +45,7 @@ const HeroSection = () => {
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center max-w-2xl mx-auto">
             <Button 
               size="lg" 
-              className="w-full md:w-auto bg-gradient-to-r from-cultivate to-orange-600 hover:from-orange-600 hover:to-cultivate text-white font-semibold px-8 py-4 text-lg hover-scale"
+              className="w-full md:w-auto bg-gradient-to-r from-obsidian to-graphite hover:from-graphite hover:to-obsidian text-white font-semibold px-8 py-4 text-lg hover-scale"
             >
               Build Personal Brand
               <div className="ml-2 atomic-element scale-75"></div>
@@ -54,10 +54,10 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="w-full md:w-auto border-2 border-graphite text-graphite hover:bg-graphite hover:text-white font-semibold px-8 py-4 text-lg hover-scale"
+              className="w-full md:w-auto border-2 border-graphite text-graphite hover:bg-gradient-to-r hover:from-graphite hover:to-obsidian hover:text-white font-semibold px-8 py-4 text-lg hover-scale"
             >
               Scale Business
-              <div className="ml-2 atomic-element scale-75 bg-graphite"></div>
+              <div className="ml-2 atomic-element scale-75"></div>
             </Button>
           </div>
 
@@ -77,8 +77,8 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-cultivate rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-cultivate rounded-full mt-2 animate-pulse"></div>
+        <div className="w-6 h-10 border-2 border-obsidian rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-gradient-to-b from-obsidian to-graphite rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>

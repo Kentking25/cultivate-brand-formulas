@@ -16,7 +16,7 @@
     --popover: 244 244 244; /* Mist White */
     --popover-foreground: 17 17 17; /* Obsidian Black */
 
-    --primary: 255 92 27; /* Cultivate Orange */
+    --primary: 17 17 17; /* Obsidian Black */
     --primary-foreground: 244 244 244; /* Mist White */
 
     --secondary: 216 216 216; /* Ash Silver */
@@ -33,18 +33,18 @@
 
     --border: 216 216 216; /* Ash Silver */
     --input: 216 216 216; /* Ash Silver */
-    --ring: 255 92 27; /* Cultivate Orange */
+    --ring: 17 17 17; /* Obsidian Black */
 
     --radius: 0.5rem;
 
     --sidebar-background: 244 244 244;
     --sidebar-foreground: 17 17 17;
-    --sidebar-primary: 255 92 27;
+    --sidebar-primary: 17 17 17;
     --sidebar-primary-foreground: 244 244 244;
     --sidebar-accent: 216 216 216;
     --sidebar-accent-foreground: 17 17 17;
     --sidebar-border: 216 216 216;
-    --sidebar-ring: 255 92 27;
+    --sidebar-ring: 17 17 17;
   }
 }
 
@@ -60,7 +60,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-cultivate to-graphite bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-obsidian via-graphite to-slate bg-clip-text text-transparent;
   }
   
   .hover-scale {
@@ -74,15 +74,15 @@
 
 @layer components {
   .atomic-element {
-    @apply relative w-4 h-4 bg-cultivate rounded-full;
+    @apply relative w-4 h-4 bg-gradient-to-br from-obsidian to-graphite rounded-full;
   }
   
   .atomic-element::before {
     content: '';
-    @apply absolute -inset-2 rounded-full border border-cultivate/30 animate-ping;
+    @apply absolute -inset-2 rounded-full border border-graphite/30 animate-ping;
   }
   
   .molecular-bond {
-    @apply w-8 h-0.5 bg-gradient-to-r from-cultivate to-graphite;
+    @apply w-8 h-0.5 bg-gradient-to-r from-obsidian via-graphite to-slate;
   }
 }
