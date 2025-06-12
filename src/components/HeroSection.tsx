@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-mist via-background to-ash"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-pearl via-background to-orange-50"></div>
       
       {/* Floating Elements */}
       <FloatingElements />
@@ -45,7 +45,7 @@ const HeroSection = () => {
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center max-w-2xl mx-auto">
             <Button 
               size="lg" 
-              className="w-full md:w-auto bg-gradient-to-r from-obsidian to-graphite hover:from-graphite hover:to-obsidian text-white font-semibold px-8 py-4 text-lg hover-scale"
+              className="w-full md:w-auto bg-cultivate-gradient hover:opacity-90 text-white font-semibold px-8 py-4 text-lg hover-scale"
             >
               Build Personal Brand
               <div className="ml-2 atomic-element scale-75"></div>
@@ -54,7 +54,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="w-full md:w-auto border-2 border-graphite text-graphite hover:bg-gradient-to-r hover:from-graphite hover:to-obsidian hover:text-white font-semibold px-8 py-4 text-lg hover-scale"
+              className="w-full md:w-auto border-2 border-vibrant text-vibrant hover:bg-cultivate-gradient hover:text-white font-semibold px-8 py-4 text-lg hover-scale"
             >
               Scale Business
               <div className="ml-2 atomic-element scale-75"></div>
@@ -65,11 +65,11 @@ const HeroSection = () => {
           <div className="mt-16">
             <p className="text-slate text-sm mb-4">Trusted by brands like:</p>
             <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-              <span className="text-graphite font-medium">Windows</span>
-              <span className="text-graphite font-medium">Printify</span>
-              <span className="text-graphite font-medium">Sprite</span>
-              <span className="text-graphite font-medium">Reebok</span>
-              <span className="text-graphite font-medium">MAGFAST</span>
+              <span className="text-charcoal font-medium">Windows</span>
+              <span className="text-charcoal font-medium">Printify</span>
+              <span className="text-charcoal font-medium">Sprite</span>
+              <span className="text-charcoal font-medium">Reebok</span>
+              <span className="text-charcoal font-medium">MAGFAST</span>
             </div>
           </div>
         </div>
@@ -77,8 +77,8 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-obsidian rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gradient-to-b from-obsidian to-graphite rounded-full mt-2 animate-pulse"></div>
+        <div className="w-6 h-10 border-2 border-vibrant rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-cultivate-gradient rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>

@@ -23,9 +23,9 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-cultivate transition-colors">Home</a>
-            <a href="#about" className="text-foreground hover:text-cultivate transition-colors">About</a>
-            <a href="#services" className="text-foreground hover:text-cultivate transition-colors">Services</a>
+            <a href="#home" className="text-foreground hover:text-vibrant transition-colors">Home</a>
+            <a href="#about" className="text-foreground hover:text-vibrant transition-colors">About</a>
+            <a href="#services" className="text-foreground hover:text-vibrant transition-colors">Services</a>
             <Button className="bg-cultivate-gradient hover:opacity-90 text-white font-medium">
               Let's Work
             </Button>
@@ -44,9 +44,9 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border">
             <div className="flex flex-col space-y-4 pt-4">
-              <a href="#home" className="text-foreground hover:text-cultivate transition-colors">Home</a>
-              <a href="#about" className="text-foreground hover:text-cultivate transition-colors">About</a>
-              <a href="#services" className="text-foreground hover:text-cultivate transition-colors">Services</a>
+              <a href="#home" className="text-foreground hover:text-vibrant transition-colors">Home</a>
+              <a href="#about" className="text-foreground hover:text-vibrant transition-colors">About</a>
+              <a href="#services" className="text-foreground hover:text-vibrant transition-colors">Services</a>
               <Button className="bg-cultivate-gradient hover:opacity-90 text-white font-medium w-full">
                 Let's Work
               </Button>

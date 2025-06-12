@@ -63,13 +63,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Kent's brand colors - updated to black gradient scheme
-				mist: '#F4F4F4',
-				ash: '#D8D8D8',
-				slate: '#666666',
-				graphite: '#3C3C3C',
-				obsidian: '#111111',
-				cultivate: '#111111' // Changed from orange to black
+				// Kent's brand colors - Orange theme inspired by reference
+				vibrant: '#FF5722', // Main vibrant orange
+				tangerine: '#FF7043', // Lighter orange
+				coral: '#FF6F43', // Coral orange
+				sunset: '#FF5722', // Deep orange
+				charcoal: '#212121', // Dark charcoal
+				slate: '#424242', // Medium gray
+				pearl: '#FAFAFA', // Off white
+				cultivate: '#FF5722' // Primary brand color (orange)
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -116,9 +118,9 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'cultivate-gradient': 'linear-gradient(135deg, #111111 0%, #3C3C3C 100%)',
-				'mist-gradient': 'linear-gradient(135deg, #F4F4F4 0%, #D8D8D8 100%)',
-				'brand-gradient': 'linear-gradient(135deg, #111111 0%, #3C3C3C 50%, #666666 100%)'
+				'cultivate-gradient': 'linear-gradient(135deg, #FF5722 0%, #FF7043 100%)',
+				'vibrant-gradient': 'linear-gradient(135deg, #FF5722 0%, #FF6F43 50%, #FF7043 100%)',
+				'brand-gradient': 'linear-gradient(135deg, #FF5722 0%, #FF6F43 50%, #FF7043 100%)'
 			}
 		}
 	},
