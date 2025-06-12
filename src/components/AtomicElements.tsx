@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 
-const FloatingAtom = ({ delay = 0, size = 'small', className = '' }) => {
+const FloatingAtom = ({ delay = 0, size = 'small', className = '', style = {} }) => {
   const sizeClasses = {
     small: 'w-2 h-2',
     medium: 'w-3 h-3',
@@ -11,7 +11,7 @@ const FloatingAtom = ({ delay = 0, size = 'small', className = '' }) => {
   return (
     <div 
       className={`absolute rounded-full bg-cultivate/20 animate-float ${sizeClasses[size]} ${className}`}
-      style={{ animationDelay: `${delay}s` }}
+      style={{ animationDelay: `${delay}s`, ...style }}
     >
       <div className="w-full h-full rounded-full bg-cultivate/40 animate-pulse-slow"></div>
     </div>
