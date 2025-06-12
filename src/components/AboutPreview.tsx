@@ -1,14 +1,11 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, Mic, BookOpen, Award } from 'lucide-react';
 import { AtomicStructure } from './AtomicElements';
-
 const AboutPreview = () => {
-  return (
-    <section className="py-20 relative">
+  return <section className="py-20 relative">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-mist to-background"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-mist to-background bg-black"></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
@@ -95,8 +92,6 @@ const AboutPreview = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutPreview;
