@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Kent's brand colors
+				mist: '#F4F4F4',
+				ash: '#D8D8D8',
+				slate: '#666666',
+				graphite: '#3C3C3C',
+				obsidian: '#111111',
+				cultivate: '#FF5C1B'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +92,33 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-20px)' }
+				},
+				'orbit': {
+					'0%': { transform: 'rotate(0deg) translateX(50px) rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg) translateX(50px) rotate(-360deg)' }
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'orbit': 'orbit 20s linear infinite',
+				'pulse-slow': 'pulse-slow 4s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+				'cultivate-gradient': 'linear-gradient(135deg, #FF5C1B 0%, #3C3C3C 100%)',
+				'mist-gradient': 'linear-gradient(135deg, #F4F4F4 0%, #D8D8D8 100%)',
+				'brand-gradient': 'linear-gradient(135deg, #111111 0%, #3C3C3C 50%, #FF5C1B 100%)'
 			}
 		}
 	},
