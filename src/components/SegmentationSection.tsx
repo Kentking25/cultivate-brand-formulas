@@ -7,8 +7,8 @@ import { MolecularBond } from './AtomicElements';
 const SegmentationSection = () => {
   return (
     <section className="py-20 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background to-mist"></div>
+      {/* Background - Pure white to gray */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50"></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
@@ -23,7 +23,7 @@ const SegmentationSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Personal Brand Path */}
-          <Card className="group relative overflow-hidden bg-gradient-to-br from-white to-mist border-2 border-transparent hover:border-cultivate transition-all duration-500 hover-scale">
+          <Card className="group relative overflow-hidden bg-gradient-to-br from-white to-gray-50 border-2 border-transparent hover:border-cultivate transition-all duration-500 hover-scale">
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-cultivate-gradient rounded-full flex items-center justify-center mr-4">
@@ -65,13 +65,13 @@ const SegmentationSection = () => {
           </Card>
 
           {/* Business Brand Path */}
-          <Card className="group relative overflow-hidden bg-gradient-to-br from-white to-ash border-2 border-transparent hover:border-graphite transition-all duration-500 hover-scale">
+          <Card className="group relative overflow-hidden bg-gradient-to-br from-white to-gray-100 border-2 border-transparent hover:border-gray-600 transition-all duration-500 hover-scale">
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-graphite to-obsidian rounded-full flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-gray-600 to-black rounded-full flex items-center justify-center mr-4">
                   <Building2 className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-graphite">Business Brands</h3>
+                <h3 className="text-2xl font-bold text-gray-700">Business Brands</h3>
               </div>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -81,27 +81,27 @@ const SegmentationSection = () => {
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-center">
-                  <div className="atomic-element mr-3 scale-75 bg-graphite"></div>
+                  <div className="atomic-element mr-3 scale-75 bg-gray-600"></div>
                   <span>Element The Agency Services</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="atomic-element mr-3 scale-75 bg-graphite"></div>
+                  <div className="atomic-element mr-3 scale-75 bg-gray-600"></div>
                   <span>Full-Service Content Marketing</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="atomic-element mr-3 scale-75 bg-graphite"></div>
+                  <div className="atomic-element mr-3 scale-75 bg-gray-600"></div>
                   <span>Performance Creative & Paid Ads</span>
                 </div>
               </div>
               
-              <Button variant="outline" className="w-full border-2 border-graphite text-graphite hover:bg-graphite hover:text-white font-semibold group">
+              <Button variant="outline" className="w-full border-2 border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white font-semibold group">
                 Scale Your Business
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               
               {/* Decorative Elements */}
               <div className="absolute top-4 right-4 opacity-20">
-                <MolecularBond className="rotate-[-45deg] bg-gradient-to-r from-graphite to-obsidian" />
+                <MolecularBond className="rotate-[-45deg] bg-gradient-to-r from-gray-600 to-black" />
               </div>
             </CardContent>
           </Card>
@@ -109,7 +109,7 @@ const SegmentationSection = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <p className="text-slate mb-4">Not sure which path is right for you?</p>
+          <p className="text-gray-600 mb-4">Not sure which path is right for you?</p>
           <Button variant="ghost" className="text-cultivate hover:text-cultivate/80 font-medium">
             Book a Strategy Call
           </Button>

@@ -5,8 +5,8 @@ import { AtomicStructure, FloatingElements } from './AtomicElements';
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-pearl via-background to-orange-50"></div>
+      {/* Background Gradient - Only white, gray, and orange */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white via-gray-50 to-gray-100"></div>
       
       {/* Floating Elements */}
       <FloatingElements />
@@ -38,7 +38,7 @@ const HeroSection = () => {
 
           {/* Segmentation Question */}
           <div className="mb-8">
-            <p className="text-lg text-slate mb-6">What describes you best?</p>
+            <p className="text-lg text-gray-600 mb-6">What describes you best?</p>
           </div>
 
           {/* Dual CTAs */}
@@ -54,7 +54,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="w-full md:w-auto border-2 border-vibrant text-vibrant hover:bg-cultivate-gradient hover:text-white font-semibold px-8 py-4 text-lg hover-scale"
+              className="w-full md:w-auto border-2 border-cultivate text-cultivate hover:bg-cultivate-gradient hover:text-white font-semibold px-8 py-4 text-lg hover-scale"
             >
               Scale Business
               <div className="ml-2 atomic-element scale-75"></div>
@@ -63,13 +63,13 @@ const HeroSection = () => {
 
           {/* Trust Indicators */}
           <div className="mt-16">
-            <p className="text-slate text-sm mb-4">Trusted by brands like:</p>
+            <p className="text-gray-600 text-sm mb-4">Trusted by brands like:</p>
             <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-              <span className="text-charcoal font-medium">Windows</span>
-              <span className="text-charcoal font-medium">Printify</span>
-              <span className="text-charcoal font-medium">Sprite</span>
-              <span className="text-charcoal font-medium">Reebok</span>
-              <span className="text-charcoal font-medium">MAGFAST</span>
+              <span className="text-black font-medium">Windows</span>
+              <span className="text-black font-medium">Printify</span>
+              <span className="text-black font-medium">Sprite</span>
+              <span className="text-black font-medium">Reebok</span>
+              <span className="text-black font-medium">MAGFAST</span>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-vibrant rounded-full flex justify-center">
+        <div className="w-6 h-10 border-2 border-cultivate rounded-full flex justify-center">
           <div className="w-1 h-3 bg-cultivate-gradient rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
