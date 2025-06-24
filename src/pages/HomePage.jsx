@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Sparkles, CheckCircle, Menu, X, Star, Check, TrendingUp, Users, Award, BarChart3, Mic, ChevronDown, ChevronUp, PlayCircle, FileText, Youtube, Instagram, Twitter, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Sparkles, CheckCircle, Menu, X, Star, Check, TrendingUp, Users, Award, BarChart3, Mic, ChevronDown, ChevronUp, PlayCircle, FileText, Youtube, Instagram, Twitter, Linkedin, Mail, Target, Users2, Zap, DollarSign, Megaphone, Lock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Navigation Component
@@ -86,7 +86,7 @@ const Navigation = () => {
   );
 };
 
-// Updated Hero Section with Trust Indicators
+// Updated Hero Section with new copy and elements
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   
@@ -104,61 +104,188 @@ const HeroSection = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto">
-        <div className={`text-center transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           
-          {/* Trust Indicator */}
-          <div className="inline-flex items-center gap-2 text-sm text-gray-600 mb-6 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full">
-            <CheckCircle className="w-4 h-4 text-green-500" />
-            <span>Trusted by 1,247+ coaches and course creators</span>
-          </div>
-          
-          {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-            Stop Guessing What to Post –{' '}
-            <span className="relative inline-block">
-              <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">
-                Get Your Personal Content Formula
-              </span>
-              <span className="absolute bottom-2 left-0 w-full h-3 bg-orange-200 -rotate-1 z-0"></span>
-            </span>{' '}
-            Instead
-          </h1>
+          {/* Main Value Proposition */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+            {/* Left Column - Main Content */}
+            <div>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                Turn Your Expertise Into{' '}
+                <span className="relative inline-block">
+                  <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
+                    Income-Replacing Content
+                  </span>
+                  <span className="absolute bottom-2 left-0 w-full h-3 bg-blue-200 -rotate-1 z-0"></span>
+                </span>
+              </h1>
 
-          {/* Subheadline */}
-          <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-4">
-            The Content Chemistry method reveals your unique storytelling formula that turns your expertise into 
-            <span className="font-semibold text-orange-600"> consistent, engaging content</span> (without generic templates or endless content creation)
+              <p className="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed">
+                Get the exact step-by-step system that helped entrepreneurs grow to 90K followers and hit #1 on Amazon. 
+                Finally know exactly what to post with a proven game plan.
+              </p>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <button className="group relative inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-xl shadow-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-200">
+                  <span>Get Your Content Game Plan</span>
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+                <button className="inline-flex items-center px-8 py-4 text-lg font-semibold text-gray-700 bg-white border-2 border-gray-300 rounded-xl hover:border-gray-400 transition-all duration-200">
+                  Book Free Assessment
+                </button>
+              </div>
+
+              {/* Results Stats */}
+              <div className="grid grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="text-2xl sm:text-3xl font-bold text-gray-900">90K+</div>
+                  <div className="text-sm text-gray-600">Followers Gained</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl sm:text-3xl font-bold text-gray-900">#1</div>
+                  <div className="text-sm text-gray-600">Amazon Bestseller</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl sm:text-3xl font-bold text-gray-900">10x</div>
+                  <div className="text-sm text-gray-600">Engagement Boost</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Method Box */}
+            <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-6">The Content Chemistry Method</h3>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-200" />
+                  <span>Industry-specific formulas</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-200" />
+                  <span>Personal story integration</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-200" />
+                  <span>Step-by-step game plan</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-200" />
+                  <span>Proven results system</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// Problem Identification Section
+const ProblemsSection = () => {
+  const problems = [
+    {
+      icon: <div className="text-4xl">😤</div>,
+      title: "Posting Without Strategy",
+      description: "You're creating content but have no idea if it will actually work or connect with your audience."
+    },
+    {
+      icon: <Megaphone className="w-8 h-8 text-orange-500" />,
+      title: "Shouting Into the Void",
+      description: "Your posts get minimal engagement while you watch others in your industry succeed."
+    },
+    {
+      icon: <DollarSign className="w-8 h-8 text-green-500" />,
+      title: "No Clear ROI",
+      description: "You're spending time on content but can't see how it translates to actual income."
+    },
+    {
+      icon: <Lock className="w-8 h-8 text-yellow-500" />,
+      title: "Trapped in Your Current Income",
+      description: "You want the freedom that comes with content-driven income but don't know how to get there."
+    }
+  ];
+
+  return (
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            You Know You Have Valuable Expertise, But...
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {problems.map((problem, index) => (
+            <div key={index} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4">
+                  {problem.icon}
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">{problem.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{problem.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// Method Explanation Section
+const ContentChemistryMethodSection = () => {
+  const methods = [
+    {
+      icon: <Target className="w-8 h-8 text-blue-500" />,
+      title: "Industry-Specific Formulas",
+      description: "We don't use one-size-fits-all templates. Every formula is customized to your specific industry and audience while following universal principles that work.",
+      gradient: "from-blue-500 to-blue-600"
+    },
+    {
+      icon: <Users2 className="w-8 h-8 text-purple-500" />,
+      title: "Personal Story Integration",
+      description: "We help you discover and contextualize your unique story to your desired results. Your experiences become your competitive advantage.",
+      gradient: "from-purple-500 to-purple-600"
+    },
+    {
+      icon: <Zap className="w-8 h-8 text-green-500" />,
+      title: "Step-by-Step Execution",
+      description: "No more guessing. You'll know exactly what to post, when to post it, and how to measure success. It's like having a GPS for your content strategy.",
+      gradient: "from-green-500 to-green-600"
+    }
+  ];
+
+  return (
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            The Content Chemistry Method
+          </h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+            Unlike generic content advice, our system is built around your specific industry and personal story. 
+            Here's how we transform your expertise into income-replacing content.
           </p>
+        </div>
 
-          {/* Supporting Text */}
-          <div className="flex items-center justify-center space-x-2 text-orange-600 mb-8">
-            <Sparkles className="w-5 h-5" />
-            <p className="text-lg font-medium italic">Like a cheat-code for your content</p>
-          </div>
+        <div className="grid lg:grid-cols-3 gap-8">
+          {methods.map((method, index) => (
+            <div key={index} className="group relative">
+              <div className="bg-gray-50 rounded-2xl p-8 h-full border border-gray-100 hover:border-gray-200 transition-all duration-300 hover:transform hover:-translate-y-1">
+                {/* Icon with gradient background */}
+                <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${method.gradient} rounded-xl mb-6`}>
+                  <div className="text-white">
+                    {method.icon}
+                  </div>
+                </div>
 
-          {/* CTA with Urgency */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <button className="group relative inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-orange-500 rounded-full shadow-lg hover:bg-orange-600 transform hover:scale-105 transition-all duration-200">
-              <span>Get My Content Formula Assessment</span>
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              <div className="absolute inset-0 -z-10 bg-orange-400 rounded-full blur-lg opacity-50 group-hover:opacity-70 transition-opacity"></div>
-            </button>
-            <p className="text-sm text-gray-600">
-              Next cohort starts February 3rd • <span className="font-semibold text-orange-600">4 spots left</span>
-            </p>
-          </div>
-
-          {/* Mini Social Proof */}
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
-            <span className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full">
-              <Star className="w-4 h-4 text-yellow-500 fill-current" />
-              <span>"90K followers in 6 months" - Sarah M.</span>
-            </span>
-            <span className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full">
-              <Star className="w-4 h-4 text-yellow-500 fill-current" />
-              <span>"#1 Amazon Bestseller" - Marcus T.</span>
-            </span>
-          </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">{method.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{method.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -319,6 +446,8 @@ const HomePage = () => {
     <div className="min-h-screen bg-white">
       <Navigation />
       <HeroSection />
+      <ProblemsSection />
+      <ContentChemistryMethodSection />
       <BrandLogosSection />
       <ProgramsSection />
       <TestMessage />
