@@ -427,7 +427,7 @@ const TestMessage = () => {
     <div className="py-8 bg-gray-50 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <p className="text-green-600 font-semibold text-lg">
-          ✅ Loveable integration working!
+          ✅ Integration test successful!
         </p>
       </div>
     </div>
