@@ -429,6 +429,9 @@ const TestMessage = () => {
         <p className="text-green-600 font-semibold text-lg">
           ✅ Integration test successful!
         </p>
+        <p className="text-green-600 text-sm mt-2">
+          Preview test
+        </p>
       </div>
     </div>
   );
