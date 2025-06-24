@@ -86,7 +86,7 @@ const Navigation = () => {
   );
 };
 
-// Updated Hero Section with exact copy from reference images
+// Updated Hero Section to match reference image
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   
@@ -95,7 +95,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative pt-24 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative pt-24 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gray-50">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
@@ -110,22 +110,17 @@ const HeroSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             {/* Left Column - Main Content */}
             <div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                Turn Your Expertise Into{' '}
-                <span className="relative inline-block">
-                  <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
-                    Income-Replacing Content
-                  </span>
-                  <span className="absolute bottom-2 left-0 w-full h-3 bg-blue-200 -rotate-1 z-0"></span>
-                </span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                <span className="text-gray-900">Turn Your Expertise Into </span>
+                <span className="text-blue-600">Income-Replacing Content</span>
               </h1>
 
-              <p className="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
                 Get the exact step-by-step system that helped entrepreneurs grow to 90K followers and hit #1 on Amazon. Finally know exactly what to post with a proven game plan.
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <button className="group relative inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-xl shadow-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-200">
                   <span>Get Your Content Game Plan</span>
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -136,41 +131,41 @@ const HeroSection = () => {
               </div>
 
               {/* Results Stats */}
-              <div className="grid grid-cols-3 gap-6">
-                <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900">90K+</div>
+              <div className="grid grid-cols-3 gap-8">
+                <div>
+                  <div className="text-3xl sm:text-4xl font-bold text-gray-900 mb-1">90K+</div>
                   <div className="text-sm text-gray-600">Followers Gained</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900">#1</div>
+                <div>
+                  <div className="text-3xl sm:text-4xl font-bold text-gray-900 mb-1">#1</div>
                   <div className="text-sm text-gray-600">Amazon Bestseller</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900">10x</div>
+                <div>
+                  <div className="text-3xl sm:text-4xl font-bold text-gray-900 mb-1">10x</div>
                   <div className="text-sm text-gray-600">Engagement Boost</div>
                 </div>
               </div>
             </div>
 
             {/* Right Column - Method Box */}
-            <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 text-white shadow-xl">
               <h3 className="text-2xl font-bold mb-6">The Content Chemistry Method</h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-blue-200" />
-                  <span>Industry-specific formulas</span>
+                  <span className="text-lg">Industry-specific formulas</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-blue-200" />
-                  <span>Personal story integration</span>
+                  <span className="text-lg">Personal story integration</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-blue-200" />
-                  <span>Step-by-step game plan</span>
+                  <span className="text-lg">Step-by-step game plan</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-blue-200" />
-                  <span>Proven results system</span>
+                  <span className="text-lg">Proven results system</span>
                 </div>
               </div>
             </div>
