@@ -86,7 +86,7 @@ const Navigation = () => {
   );
 };
 
-// Updated Hero Section with new copy and elements
+// Updated Hero Section with exact copy from reference images
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   
@@ -98,9 +98,9 @@ const HeroSection = () => {
     <section className="relative pt-24 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-        <div className="absolute top-60 -left-40 w-80 h-80 bg-orange-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse animation-delay-2000"></div>
-        <div className="absolute bottom-40 right-20 w-60 h-60 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse animation-delay-4000"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute top-60 -left-40 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse animation-delay-2000"></div>
+        <div className="absolute bottom-40 right-20 w-60 h-60 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse animation-delay-4000"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto">
@@ -121,8 +121,7 @@ const HeroSection = () => {
               </h1>
 
               <p className="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed">
-                Get the exact step-by-step system that helped entrepreneurs 10x their engagement and hit #1 in their niche. 
-                Finally know exactly what to post with a proven game plan.
+                Get the exact step-by-step system that helped entrepreneurs grow to 90K followers and hit #1 on Amazon. Finally know exactly what to post with a proven game plan.
               </p>
 
               {/* CTA Buttons */}
@@ -182,7 +181,7 @@ const HeroSection = () => {
   );
 };
 
-// Problem Identification Section
+// Problem Identification Section with exact copy from reference
 const ProblemsSection = () => {
   const problems = [
     {
@@ -191,17 +190,17 @@ const ProblemsSection = () => {
       description: "You're creating content but have no idea if it will actually work or connect with your audience."
     },
     {
-      icon: <Megaphone className="w-8 h-8 text-orange-500" />,
+      icon: <div className="text-4xl">📢</div>,
       title: "Shouting Into the Void",
       description: "Your posts get minimal engagement while you watch others in your industry succeed."
     },
     {
-      icon: <DollarSign className="w-8 h-8 text-green-500" />,
+      icon: <div className="text-4xl">💸</div>,
       title: "No Clear ROI",
       description: "You're spending time on content but can't see how it translates to actual income."
     },
     {
-      icon: <Lock className="w-8 h-8 text-yellow-500" />,
+      icon: <div className="text-4xl">🔒</div>,
       title: "Trapped in Your Current Income",
       description: "You want the freedom that comes with content-driven income but don't know how to get there."
     }
@@ -234,26 +233,29 @@ const ProblemsSection = () => {
   );
 };
 
-// Method Explanation Section
+// Method Explanation Section with updated design matching reference
 const ContentChemistryMethodSection = () => {
   const methods = [
     {
-      icon: <Target className="w-8 h-8 text-blue-500" />,
+      icon: <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+        <Target className="w-8 h-8 text-blue-600" />
+      </div>,
       title: "Industry-Specific Formulas",
-      description: "We don't use one-size-fits-all templates. Every formula is customized to your specific industry and audience while following universal principles that work.",
-      gradient: "from-blue-500 to-blue-600"
+      description: "We don't use one-size-fits-all templates. Every formula is customized to your specific industry and audience while following universal principles that work."
     },
     {
-      icon: <Users2 className="w-8 h-8 text-purple-500" />,
+      icon: <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+        <Users2 className="w-8 h-8 text-purple-600" />
+      </div>,
       title: "Personal Story Integration",
-      description: "We help you discover and contextualize your unique story to your desired results. Your experiences become your competitive advantage.",
-      gradient: "from-purple-500 to-purple-600"
+      description: "We help you discover and contextualize your unique story to your desired results. Your experiences become your competitive advantage."
     },
     {
-      icon: <Zap className="w-8 h-8 text-green-500" />,
+      icon: <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+        <Zap className="w-8 h-8 text-green-600" />
+      </div>,
       title: "Step-by-Step Execution",
-      description: "No more guessing. You'll know exactly what to post, when to post it, and how to measure success. It's like having a GPS for your content strategy.",
-      gradient: "from-green-500 to-green-600"
+      description: "No more guessing. You'll know exactly what to post, when to post it, and how to measure success. It's like having a GPS for your content strategy."
     }
   ];
 
@@ -265,8 +267,7 @@ const ContentChemistryMethodSection = () => {
             The Content Chemistry Method
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            Unlike generic content advice, our system is built around your specific industry and personal story. 
-            Here's how we transform your expertise into income-replacing content.
+            Unlike generic content advice, our system is built around your specific industry and personal story. Here's how we transform your expertise into income-replacing content.
           </p>
         </div>
 
@@ -274,11 +275,9 @@ const ContentChemistryMethodSection = () => {
           {methods.map((method, index) => (
             <div key={index} className="group relative">
               <div className="bg-gray-50 rounded-2xl p-8 h-full border border-gray-100 hover:border-gray-200 transition-all duration-300 hover:transform hover:-translate-y-1">
-                {/* Icon with gradient background */}
-                <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${method.gradient} rounded-xl mb-6`}>
-                  <div className="text-white">
-                    {method.icon}
-                  </div>
+                {/* Icon */}
+                <div className="mb-6">
+                  {method.icon}
                 </div>
 
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{method.title}</h3>
