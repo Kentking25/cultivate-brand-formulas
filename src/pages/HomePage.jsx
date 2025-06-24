@@ -121,7 +121,7 @@ const HeroSection = () => {
               </h1>
 
               <p className="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed">
-                Get the exact step-by-step system that helped entrepreneurs grow to 90K followers and hit #1 on Amazon. 
+                Get the exact step-by-step system that helped entrepreneurs 10x their engagement and hit #1 in their niche. 
                 Finally know exactly what to post with a proven game plan.
               </p>
 
