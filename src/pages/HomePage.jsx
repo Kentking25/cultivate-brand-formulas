@@ -4,70 +4,70 @@ import { Link } from 'react-router-dom';
 
 // Navigation Component
 const Navigation = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+const [isScrolled, setIsScrolled] = useState(false);
+const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+useEffect(() => {
+const handleScroll = () => {
+setIsScrolled(window.scrollY > 20);
+};
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+window.addEventListener('scroll', handleScroll);
+return () => window.removeEventListener('scroll', handleScroll);
+}, []);
 
-  const navLinks = [
-    { href: '/services', label: 'Services' },
-    { href: '#assessment', label: 'Free Assessment' },
-    { href: '/about', label: 'About' },
-    { href: '/speaking', label: 'Speaking' },
-  ];
+const navLinks = [
+{ href: '/services', label: 'Services' },
+{ href: '#assessment', label: 'Free Assessment' },
+{ href: '/about', label: 'About' },
+{ href: '/speaking', label: 'Speaking' },
+];
 
-  return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/90 backdrop-blur-md shadow-lg' : 'bg-white/70 backdrop-blur-sm'
-    }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Link to="/" className="text-xl sm:text-2xl font-bold text-gray-800 hover:text-orange-600 transition-colors">
-              The Content Chemist
-            </Link>
-          </div>
+return (
+<nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+isScrolled ? 'bg-white/90 backdrop-blur-md shadow-lg' : 'bg-white/70 backdrop-blur-sm'
+}`}>
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div className="flex justify-between items-center h-16">
+{/* Logo */}
+<div className="flex items-center">
+<Link to="/" className="text-xl sm:text-2xl font-bold text-gray-800 hover:text-orange-600 transition-colors">
+The Content Chemist
+</Link>
+</div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className="text-gray-700 hover:text-orange-600 font-medium transition-colors relative group"
-              >
-                {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-600 group-hover:w-full transition-all duration-300"></span>
-              </Link>
-            ))}
-          </div>
+{/* Desktop Navigation */}
+<div className="hidden md:flex items-center space-x-8">
+{navLinks.map((link) => (
+<Link
+key={link.href}
+to={link.href}
+className="text-gray-700 hover:text-orange-600 font-medium transition-colors relative group"
+>
+{link.label}
+<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-600 group-hover:w-full transition-all duration-300"></span>
+</Link>
+))}
+</div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? (
-              <X className="w-6 h-6 text-gray-700" />
-            ) : (
-              <Menu className="w-6 h-6 text-gray-700" />
-            )}
-          </button>
-        </div>
-      </div>
+{/* Mobile Menu Button */}
+<button
+onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+aria-label="Toggle menu"
+>
+{isMobileMenuOpen ? (
+<X className="w-6 h-6 text-gray-700" />
+) : (
+<Menu className="w-6 h-6 text-gray-700" />
+)}
+</button>
+</div>
+</div>
 
-      {/* Mobile Menu */}
-      <div className={`md:hidden transition-all duration-300 ${
-        isMobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+{/* Mobile Menu */}
+<div className={`md:hidden transition-all duration-300 ${
+isMobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
       }`}>
         <div className="bg-white border-t border-gray-100 px-4 py-4 space-y-3">
           {navLinks.map((link) => (
