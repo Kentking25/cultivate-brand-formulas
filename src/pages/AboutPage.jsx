@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Sparkles, Users, Award, BarChart3, Mic, PlayCircle, Film, Star, Camera, BookOpen, MessageCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -138,7 +139,7 @@ const AboutPage = () => {
                 </h1>
                 <p className="text-xl text-gray-700 leading-relaxed">
                   I'm Kent, and I've spent 25+ years mastering the art of storytelling—first in entertainment, 
-                  now helping entrepreneurs turn their expertise into content that actually converts.
+                  and now helping entrepreneurs transform their expertise into content that actually converts.
                 </p>
               </div>
 
@@ -199,7 +200,7 @@ const AboutPage = () => {
               Entertainment Industry Background
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Before coaching entrepreneurs, I was creating content for major brands and Hollywood productions.
+              Before coaching entrepreneurs, I created content for major brands and Hollywood productions.
             </p>
           </div>
 
@@ -225,7 +226,7 @@ const AboutPage = () => {
               Speaking & Workshop Topics
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Available for conferences, corporate events, and workshops.
+              I'm available for conferences, corporate events, and workshops.
             </p>
           </div>
 
@@ -260,4 +261,3 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
-
